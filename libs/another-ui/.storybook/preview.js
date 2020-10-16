@@ -1,4 +1,5 @@
-import { addDecorator } from '@storybook/angular';
 import { withKnobs } from '@storybook/addon-knobs';
 
-addDecorator(withKnobs);
+export const decorators = [withKnobs];
+
+// addDecorator(withKnobs);
