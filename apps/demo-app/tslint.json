@@ -1,0 +1,20 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "storybookAngularExample",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "storybook-angular-example",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}
