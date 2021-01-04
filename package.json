@@ -8,7 +8,7 @@
     "nx": "nx",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "nx run ui-react:test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
     "affected:apps": "nx affected:apps",
@@ -25,7 +25,9 @@
     "update": "ng update @nrwl/workspace",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "workspace-generator": "nx workspace-generator"
+    "workspace-generator": "nx workspace-generator",
+    "storybook": "nx run ui-react:storybook",
+    "storybook:ui": "nx run ui:storybook"
   },
   "private": true,
   "dependencies": {
@@ -64,6 +66,8 @@
     "@storybook/angular": "^6.1.11",
     "@storybook/react": "^6.1.11",
     "@svgr/webpack": "^5.4.0",
+    "@testing-library/jest-dom": "testing-library/jest-dom",
+    "@testing-library/react": "^11.2.2",
     "@types/jest": "26.0.8",
     "@types/node": "12.12.38",
     "@types/webpack": "4.41.21",

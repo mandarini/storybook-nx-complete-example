@@ -43,13 +43,6 @@
       "tags": [],
       "implicitDependencies": ["ui"]
     },
-    "another-ui": {
-      "tags": []
-    },
-    "another-ui-e2e": {
-      "tags": [],
-      "implicitDependencies": ["another-ui"]
-    },
     "ui-react": {
       "tags": []
     },
