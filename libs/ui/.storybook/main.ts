@@ -5,14 +5,10 @@ const rootMain = require('../../../.storybook/main');
 rootMain.stories.push(...['../src/lib/**/*.stories.mdx', '../src/lib/**/*.stories.@(js|jsx|ts|tsx)'])
 
 rootMain.refs = {
-    'jkafhskjd': {
-      title: "kajsdf sdjkfh",
-      url: "http://localhost:4400"
-    },
-    'reactstories': {
-      title: "the react stories",
-      url: "http://localhost:4402"
-    }
+  'ui-react': {
+    title: "UI React Stories",
+    url: "http://localhost:4402" // For local projects, please run these Storybooks BEFORE running the main Storybook.
+  }
 }
 
 module.exports = rootMain;

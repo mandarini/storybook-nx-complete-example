@@ -1,8 +1,9 @@
-// YourTheme.js
+// .storybook/manager.js
 
+import { addons } from '@storybook/addons';
 import { create } from '@storybook/theming/create';
 
-export default create({
+const theme = create({
   base: 'light',
 
   colorPrimary: 'hotpink',
@@ -10,8 +11,8 @@ export default create({
 
   // UI
   appBg: 'white',
-  appContentBg: 'silver',
-  appBorderColor: 'grey',
+  appContentBg: '#f6f6f6',
+  appBorderColor: '#ccc',
   appBorderRadius: 4,
 
   // Typography
@@ -19,21 +20,26 @@ export default create({
   fontCode: 'monospace',
 
   // Text colors
-  textColor: 'black',
+  textColor: '#777777',
   textInverseColor: 'rgba(255,255,255,0.9)',
 
   // Toolbar default and active colors
-  barTextColor: 'silver',
+  barTextColor: 'white',
   barSelectedColor: 'black',
-  barBg: 'hotpink',
+  barBg: '#9c27b0',
 
   // Form colors
   inputBg: 'white',
-  inputBorder: 'silver',
+  inputBorder: '#f6f6f6',
   inputTextColor: 'black',
   inputBorderRadius: 4,
 
   brandTitle: 'My custom storybook',
   brandUrl: 'https://example.com',
-  brandImage: 'https://placehold.it/350x150',
+  brandImage: 'https://nrwl.io/assets/nrwl-logo-white.svg',
+});
+
+
+addons.setConfig({
+  theme
 });
